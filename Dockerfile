@@ -7,6 +7,6 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 COPY app.py .
-COPY resume.pdf .
+COPY Taylor_Aedan_AT_Resume.pdf .
 
 ENTRYPOINT ["flask", "run", "--host=0.0.0.0", "--port=8080"]
