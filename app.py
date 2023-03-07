@@ -6,6 +6,10 @@ app = flask.Flask(__name__)
 def resume():
     return flask.send_file("Taylor_Aedan_AT_Resume.pdf")
 
+@app.route('/rickroll')
+def rickroll():
+    return flask.redirect("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+
 @app.route("/pdork")
 def pdork():
     return flask.redirect("https://pdork.secureighty.me")
