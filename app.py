@@ -4,9 +4,9 @@ app = flask.Flask(__name__)
 
 @app.route('/')
 def resume():
-    return flask.send_file("Taylor_Aedan_AT_Resume.pdf")
+    return flask.send_file("Taylor_Aedan_AT_Resume.pdf.pdf")
 
-@app.route('/rickrollz')
+@app.route('/rickroll')
 def rickroll():
     return flask.redirect("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 
