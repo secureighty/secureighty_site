@@ -18,5 +18,10 @@ def pdork():
 def palo():
     return flask.redirect("https://paloaltonetworks.responsibledisclosure.com/hc/en-us/articles/360037368173")
 
+@app.route("/cheshire_tree")
+@app.route("/cheshiretree")
+@app.route("/ct")
+def cheshire_tree():
+    return flask.redirect("https://www.dropbox.com/scl/fo/6jkphbszif6nkpzrsw62f/h?rlkey=6i0tbn6t3xf4ag961050sa55d&dl=0")
 
 app.run()
