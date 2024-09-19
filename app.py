@@ -3,8 +3,13 @@ import flask
 app = flask.Flask(__name__)
 
 @app.route('/')
+@app.route('/resume')
 def resume():
     return flask.send_file("Taylor_Aedan_AT_Resume.pdf")
+
+@app.route('/blog')
+def blog():
+    return "work in progress, stay tuned."
 
 @app.route('/rickroll')
 def rickroll():
