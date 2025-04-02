@@ -9,7 +9,7 @@ def resume():
 
 @app.route('/blog')
 def blog():
-    return "work in progress, stay tuned."
+    return flask.redirect(https://secureighty.me/blog/)
 
 @app.route('/rickroll')
 def rickroll():
